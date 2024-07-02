@@ -1,0 +1,104 @@
+.project-section{
+  padding: 7rem 10% ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-mid);
+}
+.project-section .title{
+  background-color :rgba(147, 150, 156, 0.4); 
+  padding:.5rem 1.6rem ;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.project-section .subTitle{
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 5rem;
+}
+
+.project-section .project{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26,.3);
+}
+.project-section .project:not(:last-child){
+  margin-bottom: 5rem;
+}
+.project-section .project.right{
+  flex-direction: row;
+}
+.project-section .project.left{
+  flex-direction: row-reverse;
+}
+.project .image{
+  width:40vw;
+  background-color: var(--background-light);
+}
+.project-section .project.left .image{
+  border-radius: 0 1rem 1rem 0;
+}
+.project-section .project.right .image{
+  border-radius:  1rem 0 0 1rem ;
+}
+.image .project-img{
+  width: 32vw;
+  margin: 3vw;
+  border-radius: 1rem;
+  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26,.2);
+  transition: all .5s;
+}
+.image .project-img:hover{
+  width: 33vw;
+  margin: 2.5vw;
+  cursor: pointer;
+}
+.project .project-info{
+  width: 40vw;
+  padding: 4vw;
+  background-color: var(--background-dark);
+  height: 100%;
+}
+.project-section .project.right .project-info{
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+.project-section .project.left .project-info{
+  border-radius:  1.5rem 0 0 1.5rem ;
+}
+
+.project-info h3{
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--text-color-bold);
+  margin-bottom: 2rem;
+}
+.project-info .dec{
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+}
+.project-info .technology {
+  display: inline-block;
+  background-color:rgba(147, 150, 156, 0.4) ;
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
+  margin-right:1rem ;
+  margin-bottom: 1rem;
+}
+.project-info .technology p{
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+.project-info span{
+  display: block;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  margin-top: 3.5rem;
+}
+
+
+

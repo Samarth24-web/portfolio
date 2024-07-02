@@ -1,0 +1,36 @@
+:root {
+  --background-dark: #ffffff;
+  --background-mid: #FFFFFF;
+  --background-light: #ffffff;
+  --text-color-bold:#111827;
+  --text-primary:#4B5563 ;
+  --hover-color:rgba(24, 22, 22, 0.868);
+}
+
+[data-theme="dark"] {
+  --background-dark: #030712;
+  --background-mid: #111827;
+  --background-light: #374151;
+  --text-primary: #D1D5DB;
+  --text-color-bold:#F9FAFB;
+  --hover-color:gainsboro;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  }
+*::selection{
+  background-color: var(--hover-color);
+  color: var(--background-dark);
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,122 @@
+.hero{
+  height: 94vh;
+  display: flex;
+  padding: 10rem 10%;
+  background-color: var(--background-dark);
+   gap: 2%;
+   align-items: center;
+}
+.Description{
+  flex-basis: 65%;
+}
+
+.Description h2{
+  font-size: 4.2rem;
+  color: var(--text-color-bold);
+  margin-bottom: 1.5rem;
+}
+
+@keyframes waving{
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(14deg);
+  }
+  20%{
+    transform: rotate(-8deg);
+  }
+  30%{
+    transform: rotate(14deg);
+  }
+  40%{
+    transform: rotate(-4deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  60%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.Description h2 .waving-hand{
+  display: inline-block;
+  animation: waving 2s linear 3;
+}
+.Description .info{
+  font-size:16px;
+  letter-spacing: .1rem;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+  color: var(--text-primary);
+}
+
+@keyframes ping {
+  75%,to {
+      transform: scale(3);
+      opacity: 0
+  }
+}
+
+.Description .available-msg .dot{
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #34D999 ;
+  position: relative;
+}
+.Description .available-msg .inner-dot{
+  position: absolute;
+  top:27%;
+  left: 27%;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  opacity: 6;
+  background-color: #34D999 ;
+  transform: translate(-50%, -50%);
+}
+.Description .available-msg .inner-dot{
+  animation: ping 1s cubic-bezier(0,0,.3,1) infinite;
+
+}
+
+.Description .location , .available-msg{
+  font-size:16px;
+  letter-spacing: .1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.Description  .available-msg{
+  margin-bottom: 5rem;
+}
+.Description .contact-list{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 2.4rem;
+}
+.Description .contact-list li a{
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.image{
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image .hero-img{
+  width: 30rem;
+  box-shadow: none;
+}

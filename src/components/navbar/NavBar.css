@@ -1,0 +1,53 @@
+nav{
+  padding: 1.5rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:var(--background-dark);
+  position: relative;
+  position: sticky;
+  top: 0;
+  border-bottom: 1.5px solid rgb(83, 79, 79,0.4);
+}
+.logo h2{
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: var( --text-color-bold);
+}
+.main-nav ul{
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.main-nav ul li a{
+  text-decoration: none;
+  color: var(--text-primary);
+}
+.main-nav ul li span{
+ display: inline-block;
+ background-color:#a7a3a368;
+ width: .2rem;
+ height: 2rem;
+}
+.main-nav ul li.SunMoon{
+   color:var(--text-primary);
+   font-size: 2rem;
+}
+.main-nav ul li button{
+  padding: .6rem 1.6rem;
+  background-color:  var( --text-color-bold);
+  color: var(--background-mid);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition:all .2s;
+}
+.main-nav ul li button:hover{
+  background-color: var(--hover-color);
+}
+

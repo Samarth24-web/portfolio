@@ -1,0 +1,49 @@
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 10%;
+  background-color: var(--background-dark);
+}
+.contact-section .title{
+  background-color :rgba(147, 150, 156, 0.4); 
+  padding:.5rem 1.6rem ;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.contact-section .subTitle {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 5rem;
+}
+.contact-info{
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.contact-info span{
+  margin-right: 1rem;
+}
+.contact-info a{
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: var(--text-color-bold);
+}
+.platforms p{
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+.platforms ul{
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.platforms ul li a{
+  color: var(--text-primary);
+  font-size: 2.6rem;
+}
