@@ -9,7 +9,7 @@ import "./Contact.css"
 const Contact = () => {
   return (
     <>
-    <section className='contact-section'>
+    <section className='contact-section flex-align dark'>
       <h3 className='title'>
       Let's Connect
       </h3>
@@ -23,9 +23,9 @@ const Contact = () => {
       <div className="platforms">
         <p>Reach Out on This Platform to Work Together:</p>
         <ul>
-          <li><a href="#"><FaGithub/></a></li>
-          <li><a href="#"><FaLinkedin/></a></li>
-          <li><a href="#"><IoLogoWhatsapp /></a></li>
+          <li><a href="#" className='logo-hover' ><FaGithub/></a></li>
+          <li><a href="#"  className='logo-hover' ><FaLinkedin/></a></li>
+          <li><a href="#"  className='logo-hover' ><IoLogoWhatsapp /></a></li>
         </ul>
       </div>
     </section>

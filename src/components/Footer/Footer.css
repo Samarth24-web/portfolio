@@ -1,11 +1,4 @@
 footer{
   height: 15rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: var(--background-mid);
-}
-footer p{
-  color: var(--text-primary);
-  font-size: 1.6rem;
 }

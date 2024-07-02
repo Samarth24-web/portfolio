@@ -7,12 +7,12 @@ import "./hero.css";
 const Hero = () => {
   return (
     <>
-      <section className="hero">
+      <section className="hero flex-align dark">
         <div className="Description">
           <h2 className="my-name">
             Hi, I'm Samarth <span className="waving-hand">👋</span>
           </h2>
-          <p className="info">
+          <p className="info para">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Exercitationem atque laborum qui vel? Laudantium esse iusto rerum
             illo, excepturi officiis magni modi minus, odio voluptatibus
@@ -32,17 +32,17 @@ const Hero = () => {
 
           <ul className="contact-list">
             <li>
-              <a href="">
+              <a href="" className="logo-hover">
                 <FaGithub />
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" className="logo-hover">
                 <FaLinkedin />{" "}
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" className="logo-hover">
                 <SiGmail />
               </a>
             </li>

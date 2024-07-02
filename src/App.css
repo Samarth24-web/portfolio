@@ -1,0 +1,65 @@
+/* display flex all items */
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+/* seting dark background color */
+.dark{
+  background-color: var(--background-dark);
+}
+
+/* setting medum dark background color */
+.mid-dark {
+  background-color: var(--background-mid);
+}
+
+/* //setting padding and flex direction */
+.about,
+.contact-section,
+.project-section,
+.skill-section {
+  padding: 7rem 10%;
+  flex-direction: column;
+}
+
+/* //paragraph styling */
+.title {
+  background-color: rgba(147, 150, 156, 0.3);
+  padding: 0.5rem 2.4rem;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* subtitle styling */
+
+.subTitle {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 5rem;
+}
+
+/* styling all paragraphs */
+.para{
+  font-size:16px;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* // logo hover effect */
+.logo-hover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:var(--text-primary);
+  padding: 1rem;
+  font-size: 2.4rem;
+  transition: all .2s;
+}
+.logo-hover:hover{
+  background-color: rgba(147, 150, 156, 0.1);
+  border-radius: .5rem;
+  border-radius: 50%;
+}

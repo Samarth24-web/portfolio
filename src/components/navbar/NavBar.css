@@ -1,9 +1,6 @@
 nav{
   padding: 1.5rem 10%;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color:var(--background-dark);
   position: relative;
   position: sticky;
   top: 0;
@@ -31,10 +28,6 @@ nav{
  background-color:#a7a3a368;
  width: .2rem;
  height: 2rem;
-}
-.main-nav ul li.SunMoon{
-   color:var(--text-primary);
-   font-size: 2rem;
 }
 .main-nav ul li button{
   padding: .6rem 1.6rem;

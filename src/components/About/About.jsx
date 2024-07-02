@@ -3,9 +3,9 @@ import "./About.css"
 
 const About = () => {
   return (
-      <section className="about">
-        <h3>About</h3>
-        <div className="description">
+      <section className="about flex-align mid-dark">
+        <h3 className='title'>About</h3>
+        <div className="description para">
         <p >
          I am Samarth Dattaray Bide, a recent graduate with a Bachelor of Engineering in Electronics and Telecommunication from Government College of Engineering and Research, Awasari Khurd. My academic focus included rigorous coursework in Web Development, Data Structures, Algorithms, and Database Management. During my studies, I developed a strong foundation in these areas, laying the groundwork for my career in software development. 
         </p>

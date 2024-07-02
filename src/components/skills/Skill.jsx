@@ -16,8 +16,8 @@ import git from "../../assets/images/git.png"
 const Skill = () => {
   return (
     <>
-    <section className='skill-section'>
-      <h3>Skills</h3>
+    <section className='skill-section flex-align dark'>
+      <h3 className='title'>Skills</h3>
       <p className='subTitle'>The skills, tools and technologies I am really good at:</p>
       <div className="skills">
 

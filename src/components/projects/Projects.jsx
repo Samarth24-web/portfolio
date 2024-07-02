@@ -6,7 +6,7 @@ import "./Projects.css"
 const Projects = () => {
   return (
     <>
-    <section className='project-section'>
+    <section className='project-section flex-align mid-dark'>
       <h3 className='title'>Work</h3>
       <p className='subTitle'>Showcasing My Expertise Through Completed Projects:</p>
       {
@@ -19,15 +19,16 @@ const Projects = () => {
 
               <div className="project-info">
                 <h3>{data.title}</h3>
-                <p className='dec'>{data.info}</p>
+                <p className=' project-description para'>{data.info}</p>
                 {
                   data.technologyUsed.map(tech=>(
                     <div className="technology">
-                      <p>{tech}</p>
+                      <p className='para'>{tech}</p>
                     </div>
                   ))
                 }
-                <span><BsBoxArrowUpRight /></span>
+                <br />
+                <span  className='logo-hover' ><BsBoxArrowUpRight/></span>
               </div>
             </div>
           </div>

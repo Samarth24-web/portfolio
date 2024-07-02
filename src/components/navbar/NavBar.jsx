@@ -6,7 +6,7 @@ import { IoMoonSharp } from "react-icons/io5";
 const NavBar = ({ setTheme , theme }) => {
   return (
     <>
-      <nav>
+      <nav className="flex-align dark">
         <div className="logo">
           <h2>Samarth</h2>
         </div>
@@ -27,7 +27,7 @@ const NavBar = ({ setTheme , theme }) => {
             <li>
               <span></span>
             </li>
-            <li className="SunMoon"
+            <li className="SunMoon logo-hover"
               onClick={() => {
                 setTheme((res) => (res === "light" ? "dark" : "light"));
               }}

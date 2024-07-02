@@ -1,23 +1,5 @@
 .skill-section{
-  padding: 7rem 10%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--background-dark);
-}
-.skill-section h3{
-    background-color :rgba(147, 150, 156, 0.4); 
-    padding:.5rem 1.6rem ;
-    font-size: 1.6rem;
-    color: var(--text-primary);
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-}
-.skill-section .subTitle{
-  font-size: 1.8rem;
-  color: var(--text-primary);
-  margin-bottom: 5rem;
 }
 
 .skill-section .skills{
