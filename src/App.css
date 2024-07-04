@@ -18,9 +18,54 @@
 .about,
 .contact-section,
 .project-section,
-.skill-section {
+.skill-section ,
+.hero{
   padding: 7rem 10%;
+}
+.about,
+.contact-section,
+.project-section,
+.skill-section  {
   flex-direction: column;
+}
+
+
+
+@media(max-width:80em){
+  .about,
+  .contact-section,
+  .project-section,
+  .skill-section ,
+  .hero{
+    padding: 7rem 9%;
+  }
+}
+@media(max-width:78em){
+  .about,
+  .contact-section,
+  .project-section,
+  .skill-section ,
+  .hero{
+    padding: 7rem 7.5%;
+  }
+}
+@media(max-width:75em){
+  .about,
+  .contact-section,
+  .project-section,
+  .skill-section ,
+  .hero{
+    padding: 7rem 6%;
+  }
+}
+@media(max-width:73em){
+  .about,
+  .contact-section,
+  .project-section,
+  .skill-section ,
+  .hero{
+    padding: 7rem 4.5%;
+  }
 }
 
 /* //paragraph styling */
@@ -63,3 +108,11 @@
   border-radius: .5rem;
   border-radius: 50%;
 }
+
+@media(max-width:52em){
+.flex-col{
+  flex-direction: column;
+}
+}
+
+

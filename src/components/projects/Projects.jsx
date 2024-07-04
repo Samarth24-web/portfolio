@@ -11,7 +11,7 @@ const Projects = () => {
       <p className='subTitle'>Showcasing My Expertise Through Completed Projects:</p>
       {
         projectData.map((data,i)=>(
-          <div className={`project ${i/2?"left":"right"}`}>
+          <div key={i} className={`project ${i/2?"left":"right"} flex-col`}>
             <div className="image">
               <img className='project-img' src={data.image} alt="project image" />
             </div>

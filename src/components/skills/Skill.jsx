@@ -77,14 +77,6 @@ const Skill = () => {
         <div className="logo"><ImHtmlFive2 /></div>
         <p>HTML</p>
         </div>
-        <div className="skill">
-        <div className="logo"><ImHtmlFive2 /></div>
-        <p>HTML</p>
-        </div>
-        <div className="skill">
-        <div className="logo"><ImHtmlFive2 /></div>
-        <p>HTML</p>
-        </div>
 
       </div>
     </section>

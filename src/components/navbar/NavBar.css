@@ -1,11 +1,19 @@
 nav{
-  padding: 1.5rem 10%;
+  padding: 2rem 10%;
   justify-content: space-between;
   position: relative;
   position: sticky;
   top: 0;
   border-bottom: 1.5px solid rgb(83, 79, 79,0.4);
+  opacity: 10;
 }
+.hamburger{
+   font-size: 2.4rem;
+   color: var(--text-primary);
+   display: none;
+   opacity: 10;
+}
+
 .logo h2{
   font-size: 3.2rem;
   font-weight: bold;
@@ -44,3 +52,70 @@ nav{
   background-color: var(--hover-color);
 }
 
+
+
+
+@media(max-width:80em){
+  nav{
+    padding: 2rem 9%;
+  }
+}
+@media(max-width:78em){
+  nav{
+    padding: 2rem 7.5%;
+  }
+}
+@media(max-width:75em){
+  nav{
+    padding: 2rem 6%;
+  }
+}
+@media(max-width:73em){
+  nav{
+    padding: 2rem 4.5%;
+  }
+}
+
+
+/* // making navbar respansive */
+
+@media(max-width:52em){
+  .main-nav{
+    position: absolute;
+    width: 70vw;
+    height: 100vh;
+    top: 0%;
+    right: 0;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    display: none;
+  }
+  .main-nav.open{
+    display: block;
+  }
+  .main-nav ul{
+    font-size: 2.2rem;
+    margin-top: 10rem;
+    color:black;
+  }
+  .hamburger{
+    display: block;
+  }
+  .hamburger.close{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+  .main-nav ul li span{
+    display: inline-block;
+    background-color:#a7a3a368;
+    width: 20rem;
+    height: .2rem;
+   }
+   .SunMoon::before{
+    content: "Change Theme :";
+    font-weight: 400;
+    font-size: 2rem;
+    margin-right: 2rem;
+   }
+}

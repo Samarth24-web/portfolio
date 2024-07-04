@@ -16,7 +16,7 @@ const Contact = () => {
       <p className="subTitle">
       What’s next? Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect:
       </p>
-      <div className='contact-info'>
+      <div className='contact-info flex-col'>
         <a href="tel:+919579394172"><span><FaPhone /></span> +91 9579394172</a> 
         <a href="bidesamarth6@gmail.com"><span><SiGmail/></span> bidesamarth6@gmail.com</a>
       </div>

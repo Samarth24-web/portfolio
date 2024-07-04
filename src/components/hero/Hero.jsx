@@ -7,7 +7,14 @@ import "./hero.css";
 const Hero = () => {
   return (
     <>
-      <section className="hero flex-align dark">
+      <section className="hero flex-align dark flex-col">
+        
+      <div className="image">
+          <img className="hero-img"
+            src="https://purepng.com/public/uploads/large/purepng.com-ironmanironmansuperheromarvel-comicscharactermarvel-studiosrobert-downey-jrtony-stark-1701528611623ycxvt.png"
+            alt="my image"
+          />
+        </div>
         <div className="Description">
           <h2 className="my-name">
             Hi, I'm Samarth <span className="waving-hand">👋</span>
@@ -47,13 +54,6 @@ const Hero = () => {
               </a>
             </li>
           </ul>
-        </div>
-
-        <div className="image">
-          <img className="hero-img"
-            src="https://purepng.com/public/uploads/large/purepng.com-ironmanironmansuperheromarvel-comicscharactermarvel-studiosrobert-downey-jrtony-stark-1701528611623ycxvt.png"
-            alt="my image"
-          />
         </div>
       </section>
     </>

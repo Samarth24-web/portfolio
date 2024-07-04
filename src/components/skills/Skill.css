@@ -4,10 +4,36 @@
 
 .skill-section .skills{
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-  row-gap: 3rem;
-  column-gap: 2rem;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  row-gap: 2rem;
+  column-gap: 1rem;
 }
+
+@media(max-width:75em){
+  .skill-section .skills{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media(max-width:65em){
+  .skill-section .skills{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:52em){
+  .skill-section .skills{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:36em){
+  .skill-section .skills{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+
 
 .skills .skill{
   display: flex;

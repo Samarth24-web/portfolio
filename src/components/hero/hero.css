@@ -1,11 +1,13 @@
 .hero {
-  min-height: 92vh;
-  padding: 10rem 10%;
-  gap: 2%;
+  flex-direction: row-reverse;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  gap:3rem;
 }
 .Description {
   flex-basis: 65%;
 }
+
 
 .Description h2 {
   font-size: 4.2rem;
@@ -43,6 +45,7 @@
 .Description h2 .waving-hand {
   display: inline-block;
   animation: waving 2s linear 3;
+  opacity: 1;
 }
 .Description .info {
   margin-bottom: 5rem;
@@ -65,6 +68,7 @@
   opacity: 1;
   background-color: #34d999;
   position: relative;
+  opacity: 1;
 }
 .Description .available-msg .inner-dot {
   position: absolute;
@@ -76,6 +80,7 @@
   opacity: 6;
   background-color: #34d999;
   transform: translate(-50%, -50%);
+  opacity: 1;
 }
 .Description .available-msg .inner-dot {
   animation: ping 1s cubic-bezier(0, 0, 0.3, 1) infinite;
@@ -109,6 +114,26 @@
 }
 
 .image .hero-img {
-  width: 30rem;
+  width: 25vw;
+  margin-left: 2rem;
   box-shadow: none;
+}
+
+@media(max-width:65em){
+  .Description {
+    flex-basis: 58%;
+  } 
+  .image .hero-img {
+    width: 30vw;
+  }
+}
+
+
+@media(max-width:52em){
+  .hero{
+    padding: 3rem;
+   }
+   .image .hero-img {
+    width: 30rem;
+  }
 }
