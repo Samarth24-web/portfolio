@@ -1,137 +1,163 @@
-
-.project-section .project{
+.project-section .project {
   border-radius: 10px;
   display: flex;
   width: 100%;
-  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26,.3);
+  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26, .3);
 }
-.project-section .project:not(:last-child){
+
+.project-section .project:not(:last-child) {
   margin-bottom: 5rem;
 }
-.project-section .project.right{
+
+.project-section .project.right {
   flex-direction: row;
 }
-.project-section .project.left{
+
+.project-section .project.left {
   flex-direction: row-reverse;
 }
-.project .image{
+
+.project .image {
   flex-basis: 50%;
   background-color: var(--background-light);
 }
-.project-section .project.left .image{
+
+.project-section .project.left .image {
   border-radius: 0 1.5rem 1.5rem 0;
 }
-.project-section .project.right .image{
-  border-radius:  1.5rem 0 0 1.5rem ;
+
+.project-section .project.right .image {
+  border-radius: 1.5rem 0 0 1.5rem;
 }
-.image .project-img{
-  
+
+.image .project-img {
+
   width: 34vw;
   margin: 3vw;
   border-radius: 1rem;
-  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26,.2);
+  box-shadow: .1rem .1rem .4rem rgb(28, 26, 26, .2);
   transition: all .5s;
 }
-.image .project-img:hover{
+
+.image .project-img:hover {
   width: 35vw;
   margin: 2.5vw;
   cursor: pointer;
 }
-.project .project-info{
+
+.project .project-info {
   flex-basis: 50%;
   padding: 4vw;
   background-color: var(--background-dark);
   height: 100%;
 }
-.project-section .project.right .project-info{
+
+.project-section .project.right .project-info {
   border-radius: 0 1.5rem 1.5rem 0;
 }
-.project-section .project.left .project-info{
-  border-radius:  1.5rem 0 0 1.5rem ;
+
+.project-section .project.left .project-info {
+  border-radius: 1.5rem 0 0 1.5rem;
 }
 
-.project-info h3{
+.project-info h3 {
   font-size: 2.4rem;
   text-transform: capitalize;
   display: inline-block;
   color: var(--text-color-bold);
   margin-bottom: 2rem;
 }
-.project-info .project-description{
+
+.project-info .project-description {
   margin-bottom: 3rem;
 }
+
 .project-info .technology {
   display: inline-block;
-  background-color:rgba(147, 150, 156, 0.4) ;
+  background-color: rgba(147, 150, 156, 0.4);
   padding: .5rem 1.5rem;
   border-radius: 1rem;
-  margin-right:1rem ;
+  margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.project-info span{
+
+.project-info span {
   font-size: 2rem;
   display: inline-block;
   margin-top: 3.5rem;
 }
 
 
-@media(max-width:80em){
-  .image .project-img{
+@media(max-width:80em) {
+  .image .project-img {
     width: 35vw;
   }
-  .image .project-img:hover{
+
+  .image .project-img:hover {
     width: 36vw;
   }
 }
-@media(max-width:78em){
-  .image .project-img{
+
+@media(max-width:78em) {
+  .image .project-img {
     width: 36.5vw;
   }
-  .image .project-img:hover{
+
+  .image .project-img:hover {
     width: 37.5vw;
   }
 }
-@media(max-width:75em){
-  .image .project-img{
+
+@media(max-width:75em) {
+  .image .project-img {
     width: 38vw;
   }
-  .image .project-img:hover{
+
+  .image .project-img:hover {
     width: 39vw;
   }
 }
-@media(max-width:73em){
-  .image .project-img{
+
+@media(max-width:73em) {
+  .image .project-img {
     width: 39.5vw;
   }
-  .image .project-img:hover{
+
+  .image .project-img:hover {
     width: 40.5vw;
   }
 }
 
-@media(max-width:52em){
-  .project-section .project.right,
-  .project-section .project.left{
-  flex-direction: column;
-}
-.image .project-img{
-  width: 75vw;
-  margin: 5vw;
-}
-.image .project-img:hover{
-  width: 76vw;
-  margin: 2.5vw;
- }
- .project-section .project.right .project-info{
-  border-radius: 0 0 1.5rem 1.5rem;
-}
-.project-section .project.left .project-info{
-  border-radius:0 0  1.5rem 1.5rem ;
-}
-.project-section .project.left .image{
-  border-radius: 1.5rem 1.5rem 0 0;
-}
-.project-section .project.right .image{
-  border-radius:  1.5rem 1.5rem 0 0;
-}
-}
+@media(max-width:52em) {
 
+  .project-section .project.right,
+  .project-section .project.left {
+    flex-direction: column;
+  }
+
+  .image .project-img {
+    width: 75vw;
+    margin: 5vw;
+  }
+
+  .image .project-img:hover {
+    width: 76vw;
+    margin: 2.5vw;
+  }
+
+  .project-section .project.right .project-info {
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .project-section .project.left .project-info {
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .project-section .project.left .image {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .project-section .project.right .image {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+}

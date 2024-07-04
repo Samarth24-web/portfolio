@@ -1,58 +1,113 @@
+/* // common css */
+
 :root {
   --background-dark: #ffffff;
-  --background-mid: #FFFFFF;
+  --background-mid: #ffffff;
   --background-light: #ffffff;
-  --text-color-bold:#111827;
-  --text-primary:#4B5563 ;
-  --hover-color:rgba(24, 22, 22, 0.868);
+  --text-color-bold: #111827;
+  --text-primary: #4b5563;
+  --hover-color: rgba(24, 22, 22, 0.868);
 }
 
 [data-theme="dark"] {
   --background-dark: #030712;
   --background-mid: #111827;
   --background-light: #374151;
-  --text-primary: #D1D5DB;
-  --text-color-bold:#F9FAFB;
-  --hover-color:gainsboro;
+  --text-primary: #d1d5db;
+  --text-color-bold: #f9fafb;
+  --hover-color: gainsboro;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   transition: all 2s;
   position: relative;
-  }
-*::selection{
+}
+
+*::selection {
   background-color: var(--hover-color);
   color: var(--background-dark);
 }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-
-
-@media(max-width:52em){
-  html {
-    font-size: 60%;
-  }
-  .flex-col{
-    flex-direction: column;
-  }
-}
-@media(max-width:36em){
-  html {
-    font-size: 60%;
-  }
-  .flex-col{
-    flex-direction: column;
-  }
+/* display flex all items */
+.flex-align {
+  display: flex;
+  align-items: center;
 }
 
+/* seting dark background color */
+.dark {
+  background-color: var(--background-dark);
+}
+
+/* setting medum dark background color */
+.mid-dark {
+  background-color: var(--background-mid);
+}
+
+/* //setting padding and flex direction */
+.ideal-padding {
+  padding: 7rem 10%;
+}
+
+.about,
+.contact-section,
+.project-section,
+.skill-section {
+  flex-direction: column;
+}
+
+/* //paragraph styling */
+.title {
+  background-color: rgba(147, 150, 156, 0.3);
+  padding: 0.5rem 2.4rem;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* subtitle styling */
+
+.subTitle {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 5rem;
+}
+
+/* styling all paragraphs */
+.para {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* // logo hover effect */
+.logo-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  padding: 1rem;
+  font-size: 2.4rem;
+  transition: all 0.2s;
+}
+
+.logo-hover:hover {
+  background-color: rgba(147, 150, 156, 0.1);
+  border-radius: 0.5rem;
+  border-radius: 50%;
+}

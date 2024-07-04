@@ -5,17 +5,16 @@ import { IoIosSunny } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 
-const NavBar = ({ setTheme , theme }) => {
+const NavBar = ({ setTheme, theme }) => {
+  const [navState, setNavState] = useState(false);
 
-const [navState , setNavState]=useState(false);
-
-// useEffect(()=>{
-//   if(navState){
-//     document.body.addEventListener("click" ,()=>{
-//       setNavState(!navState)
-//      })
-//   }
-// },[navState])
+  // useEffect(()=>{
+  //   if(navState){
+  //     document.body.addEventListener("click" ,()=>{
+  //       setNavState(!navState)
+  //      })
+  //   }
+  // },[navState])
 
   return (
     <>
@@ -23,7 +22,7 @@ const [navState , setNavState]=useState(false);
         <div className="logo">
           <h2>Samarth</h2>
         </div>
-        <div className={`main-nav ${navState?"open":""}`}>
+        <div className={`main-nav ${navState ? "open" : ""}`}>
           <ul className="flex-col">
             <li>
               <a href="#">About</a>
@@ -40,28 +39,24 @@ const [navState , setNavState]=useState(false);
             <li>
               <span></span>
             </li>
-            <li className="SunMoon logo-hover"
+            <li
+              className="SunMoon logo-hover"
               onClick={() => {
                 setTheme((res) => (res === "light" ? "dark" : "light"));
               }}
             >
-              {
-                theme==="dark"?
-                <IoIosSunny />:
-                <IoMoonSharp />
-              }
+              {theme === "dark" ? <IoIosSunny /> : <IoMoonSharp />}
             </li>
             <li>
               <button>Download CV</button>{" "}
             </li>
           </ul>
         </div>
-        <div className={`hamburger ${navState?"close":""}`} onClick={()=>setNavState(!navState)}>
-          {
-            navState?
-            <IoMdClose />:
-            <RxHamburgerMenu />
-            }
+        <div
+          className={`hamburger ${navState ? "close" : ""}`}
+          onClick={() => setNavState(!navState)}
+        >
+          {navState ? <IoMdClose /> : <RxHamburgerMenu />}
         </div>
       </nav>
     </>

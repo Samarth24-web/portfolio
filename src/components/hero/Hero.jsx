@@ -7,10 +7,10 @@ import "./hero.css";
 const Hero = () => {
   return (
     <>
-      <section className="hero flex-align dark flex-col">
-        
-      <div className="image">
-          <img className="hero-img"
+      <section className="hero flex-align dark flex-col ideal-padding">
+        <div className="image">
+          <img
+            className="hero-img"
             src="https://purepng.com/public/uploads/large/purepng.com-ironmanironmansuperheromarvel-comicscharactermarvel-studiosrobert-downey-jrtony-stark-1701528611623ycxvt.png"
             alt="my image"
           />
@@ -32,7 +32,7 @@ const Hero = () => {
           </p>
           <p className="available-msg">
             <span className="dot">
-               <span className="inner-dot"></span>
+              <span className="inner-dot"></span>
             </span>
             Available Now
           </p>

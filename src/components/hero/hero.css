@@ -2,12 +2,12 @@
   flex-direction: row-reverse;
   padding-top: 15rem;
   padding-bottom: 15rem;
-  gap:3rem;
+  gap: 3rem;
 }
+
 .Description {
   flex-basis: 65%;
 }
-
 
 .Description h2 {
   font-size: 4.2rem;
@@ -19,24 +19,31 @@
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -47,11 +54,13 @@
   animation: waving 2s linear 3;
   opacity: 1;
 }
+
 .Description .info {
   margin-bottom: 5rem;
 }
 
 @keyframes ping {
+
   75%,
   to {
     transform: scale(3);
@@ -70,6 +79,7 @@
   position: relative;
   opacity: 1;
 }
+
 .Description .available-msg .inner-dot {
   position: absolute;
   top: 27%;
@@ -82,6 +92,7 @@
   transform: translate(-50%, -50%);
   opacity: 1;
 }
+
 .Description .available-msg .inner-dot {
   animation: ping 1s cubic-bezier(0, 0, 0.3, 1) infinite;
 }
@@ -97,11 +108,13 @@
 .Description .available-msg {
   margin-bottom: 5rem;
 }
+
 .Description .contact-list {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
+
 .Description .contact-list li a {
   text-decoration: none;
 }
@@ -119,21 +132,18 @@
   box-shadow: none;
 }
 
-@media(max-width:65em){
+@media (max-width: 65em) {
   .Description {
     flex-basis: 58%;
-  } 
+  }
+
   .image .hero-img {
     width: 30vw;
   }
 }
 
-
-@media(max-width:52em){
-  .hero{
-    padding: 3rem;
-   }
-   .image .hero-img {
-    width: 30rem;
+@media (max-width: 52em) {
+  .image .hero-img {
+    width: 33rem;
   }
 }

@@ -1,35 +1,40 @@
-.contact-info{
+.contact-info {
   display: flex;
   gap: 5rem;
   margin-bottom: 5rem;
 }
-.contact-info span{
+
+.contact-info span {
   margin-right: 1rem;
 }
-.contact-info a{
+
+.contact-info a {
   font-size: 2.4rem;
   text-decoration: none;
   color: var(--text-color-bold);
 }
-.platforms p{
+
+.platforms p {
   margin-bottom: 3rem;
   font-size: 1.6rem;
   color: var(--text-primary);
 }
-.platforms ul{
+
+.platforms ul {
   display: flex;
   gap: 5rem;
   list-style: none;
   align-items: center;
   justify-content: center;
 }
-.platforms ul li a{
+
+.platforms ul li a {
   color: var(--text-primary);
   font-size: 2.6rem;
 }
 
-@media(max-width:52em){
-  .contact-info{
+@media (max-width: 52em) {
+  .contact-info {
     gap: 2rem;
   }
 }
