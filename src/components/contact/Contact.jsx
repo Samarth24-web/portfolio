@@ -22,7 +22,7 @@ const Contact = () => {
             </span>{" "}
             +91 9579394172
           </a>
-          <a href="bidesamarth6@gmail.com">
+          <a  href="mailto:bidesamarth6@gmail.com">
             <span>
               <SiGmail />
             </span>{" "}
@@ -33,17 +33,17 @@ const Contact = () => {
           <p>Reach Out on This Platform to Work Together:</p>
           <ul>
             <li>
-              <a href="#" className="logo-hover">
+              <a href="https://github.com/Samarth24-web" className="logo-hover">
                 <FaGithub />
               </a>
             </li>
             <li>
-              <a href="#" className="logo-hover">
+              <a href="https://www.linkedin.com/in/samarth-bide-515581243/" className="logo-hover">
                 <FaLinkedin />
               </a>
             </li>
             <li>
-              <a href="#" className="logo-hover">
+              <a href="https://wa.me/9579394172?text=Hello%20%20samarth!" target="_blank" className="logo-hover">
                 <IoLogoWhatsapp />
               </a>
             </li>

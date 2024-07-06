@@ -7,14 +7,26 @@ import { IoMdClose } from "react-icons/io";
 
 const NavBar = ({ setTheme, theme }) => {
   const [navState, setNavState] = useState(false);
+  const [navBlur , setNavBlur]=useState(false);
 
-  // useEffect(()=>{
-  //   if(navState){
-  //     document.body.addEventListener("click" ,()=>{
-  //       setNavState(!navState)
-  //      })
-  //   }
-  // },[navState])
+  localStorage.setItem("t" ,  theme );
+  console.log(localStorage.getItem("t"))
+
+  useEffect(()=>{
+      window.addEventListener("scroll",()=>{
+      if(document.documentElement.scrollTop>80 && document.documentElement.scrollTop<350 && navBlur===false){
+        setNavBlur(true);
+        document.querySelector("nav").classList.add("blur");
+       }
+       if(document.documentElement.scrollTop<80 && navBlur===true){
+         setNavBlur(false);
+         document.querySelector("nav").classList.remove("blur");
+        }
+    });
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  } ,[navBlur])
 
   return (
     <>

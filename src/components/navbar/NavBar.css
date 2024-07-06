@@ -1,15 +1,19 @@
 nav {
-  padding: 2rem 10%;
+  padding: 1.5rem 10%;
   justify-content: space-between;
   position: relative;
   position: sticky;
   top: 0;
-  border-bottom: 1.5px solid rgb(83, 79, 79, 0.4);
   opacity: 10;
+}
+nav.blur{
+  background-color: rgba(var(--background-dark),.1);
+  backdrop-filter: blur(20px);
+  border-bottom: 1.5px solid rgb(83, 79, 79, 0.4);
 }
 
 .hamburger {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   color: var(--text-primary);
   display: none;
   opacity: 10;
@@ -63,25 +67,25 @@ nav {
 
 @media(max-width:80em) {
   nav {
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
   }
 }
 
 @media(max-width:78em) {
   nav {
-    padding: 2rem 7.5%;
+    padding: 1.5rem 7.5%;
   }
 }
 
 @media(max-width:75em) {
   nav {
-    padding: 2rem 6%;
+    padding: 1.5rem 6%;
   }
 }
 
 @media(max-width:73em) {
   nav {
-    padding: 2rem 4.5%;
+    padding: 1.5rem 4.5%;
   }
 }
 
@@ -90,13 +94,14 @@ nav {
 
 @media(max-width:52em) {
   .main-nav {
-    position: absolute;
-    width: 70vw;
+    position: fixed;
+    width: 100vw;
     height: 100vh;
-    top: 0%;
+    top: 0;
     right: 0;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(20px);
     display: none;
   }
 
@@ -105,7 +110,7 @@ nav {
   }
 
   .main-nav ul {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     margin-top: 10rem;
     color: black;
   }
@@ -115,6 +120,7 @@ nav {
   }
 
   .hamburger.close {
+    font-size: 4.2rem;
     position: absolute;
     top: 3rem;
     right: 3rem;

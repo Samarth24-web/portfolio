@@ -28,7 +28,7 @@ const Projects = () => {
                 <h3>{data.title}</h3>
                 <p className=" project-description para">{data.info}</p>
                 {data.technologyUsed.map((tech) => (
-                  <div className="technology">
+                  <div key={tech} className="technology">
                     <p className="para">{tech}</p>
                   </div>
                 ))}

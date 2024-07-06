@@ -11,7 +11,8 @@ import spring from "../../assets/images/spring.png";
 import bootstrap from "../../assets/images/bootstrap.png";
 import sql from "../../assets/images/sql.png";
 import git from "../../assets/images/git.png";
-
+import sprigBOOt from "../../assets/images/spring_boot.png";
+import maven from "../../assets/images/maven.png";
 const Skill = () => {
   return (
     <>
@@ -50,8 +51,16 @@ const Skill = () => {
             <p>JAVA</p>
           </div>
           <div className="skill">
+            <img src={maven} alt="spring logo" />
+            <p>MAVEN</p>
+          </div>
+          <div className="skill">
             <img src={spring} alt="spring logo" />
             <p>SPRING</p>
+          </div>
+          <div className="skill">
+            <img src={sprigBOOt} alt="spring logo" />
+            <p>SPRINGBOOT</p>
           </div>
           <div className="skill">
             <img src={sql} alt="sql logo" />
@@ -60,18 +69,6 @@ const Skill = () => {
           <div className="skill">
             <img src={git} alt="git logo" />
             <p>GIT</p>
-          </div>
-          <div className="skill">
-            <div className="logo">
-              <ImHtmlFive2 />
-            </div>
-            <p>HTML</p>
-          </div>
-          <div className="skill">
-            <div className="logo">
-              <ImHtmlFive2 />
-            </div>
-            <p>HTML</p>
           </div>
           <div className="skill">
             <div className="logo">

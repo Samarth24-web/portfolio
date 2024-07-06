@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "./components/navbar/NavBar.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import About from "./components/About/About.jsx";
@@ -8,9 +8,8 @@ import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  console.log(theme);
+  const [theme, setTheme] = useState(localStorage.getItem("t") || "ligth");
+ 
   return (
     <>
       <main data-theme={theme}>
