@@ -32,21 +32,21 @@ const NavBar = ({ setTheme, theme }) => {
     <>
       <nav className="flex-align dark">
         <div className="logo">
-          <h2>Samarth</h2>
+          <a href="#hero"><h2>Samarth</h2></a>
         </div>
         <div className={`main-nav ${navState ? "open" : ""}`}>
           <ul className="flex-col">
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Skill</a>
+              <a href="#skill">Skill</a>
             </li>
             <li>
-              <a href="#">Project</a>
+              <a href="#project">Project</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
               <span></span>

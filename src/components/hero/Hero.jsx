@@ -9,7 +9,7 @@ import image from "../../assets/images/my_image.jpg"
 const Hero = () => {
   return (
     <>
-      <section className="hero flex-align dark flex-col">
+      <section id="hero" className="hero flex-align dark flex-col">
         <div className="image">
           <img
             className="hero-img"

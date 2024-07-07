@@ -7,13 +7,13 @@ export const projectData = [
     image: omnifood,
     info: "An interactive and responsive Omnifood website that adheres to design principles. The site features dynamic content, smooth animations, and a mobile-optimized interface, providing a seamless and engaging user experience across all devices.",
     technologyUsed: ["HTML", "CSS", "Responsive web design"],
-    link: "x",
+    link: "https://omnifood-sb24.netlify.app/",
   },
   {
     title: "youtube clone",
     image: youtube_clone,
     info: "A React-based YouTube clone that is both functional and responsive. The site offers dynamic features, smooth transitions, and a design optimized for all devices, providing an intuitive and enjoyable user experience.",
     technologyUsed: ["HTML", "CSS", "React", "Rest API"],
-    link: "x",
+    link: "https://admirable-biscotti-0804ac.netlify.app/",
   },
 ];

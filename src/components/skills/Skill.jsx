@@ -16,7 +16,7 @@ import maven from "../../assets/images/maven.png";
 const Skill = () => {
   return (
     <>
-      <section className="skill-section flex-align dark ideal-padding">
+      <section id="skill" className="skill-section flex-align dark ideal-padding">
         <h3 className="title">Skills</h3>
         <p className="subTitle">
           The skills, tools and technologies I am really good at:

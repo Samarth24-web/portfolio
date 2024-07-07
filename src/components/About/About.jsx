@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section className="about flex-align mid-dark  ideal-padding">
+    <section id="about" className="about flex-align mid-dark  ideal-padding">
       <h3 className="title">About</h3>
       <div className="description para">
         <p>

@@ -9,7 +9,7 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
-      <section className="contact-section flex-align dark ideal-padding">
+      <section id="contact" className="contact-section flex-align dark ideal-padding">
         <h3 className="title">Let's Connect</h3>
         <p className="subTitle">
           What’s next? Feel free to reach out to me if you are looking for a

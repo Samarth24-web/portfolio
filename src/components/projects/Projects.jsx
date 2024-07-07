@@ -6,7 +6,7 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <>
-      <section className="project-section flex-align mid-dark ideal-padding">
+      <section id="project" className="project-section flex-align mid-dark ideal-padding">
         <h3 className="title">Work</h3>
         <p className="subTitle">
           Showcasing My Expertise Through Completed Projects:
@@ -17,11 +17,13 @@ const Projects = () => {
             className={`project ${i / 2 ? "left" : "right"} flex-col`}
           >
             <div className="image">
-              <img
+             <a href={data.link} target="_blank">
+             <img
                 className="project-img"
                 src={data.image}
                 alt="project image"
               />
+             </a>
             </div>
             <div>
               <div className="project-info">
@@ -34,7 +36,7 @@ const Projects = () => {
                 ))}
                 <br />
                 <span className="logo-hover">
-                  <BsBoxArrowUpRight />
+                  <a href={data.link} target="_blank"> <BsBoxArrowUpRight /> </a>
                 </span>
               </div>
             </div>

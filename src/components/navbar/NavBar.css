@@ -19,6 +19,9 @@ nav.blur{
   opacity: 10;
 }
 
+a{
+  text-decoration: none
+}
 .logo h2 {
   font-size: 3.2rem;
   font-weight: bold;
