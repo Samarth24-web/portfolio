@@ -70,22 +70,11 @@ const Skill = () => {
             <img src={git} alt="git logo" />
             <p>GIT</p>
           </div>
-          <div className="skill">
-            <div className="logo">
-              <ImHtmlFive2 />
-            </div>
-            <p>HTML</p>
-          </div>
-          <div className="skill">
-            <div className="logo">
-              <ImHtmlFive2 />
-            </div>
-            <p>HTML</p>
-          </div>
         </div>
       </section>
     </>
-  );
+  );.
+  
 };
 
 export default Skill;
