@@ -1,5 +1,4 @@
 .hero {
-  height: 92vh;
   flex-direction: row-reverse;
   padding: 11rem 10%;
   gap: 3rem;
@@ -136,6 +135,11 @@
   box-shadow: none;
 }
 
+@media(min-width:56em){
+  .hero{
+   height: 92vh;
+  }
+}
 @media(max-width:80em){
   .hero{
     padding: 11rem 9%;
