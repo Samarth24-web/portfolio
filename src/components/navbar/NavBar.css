@@ -1,12 +1,12 @@
 nav {
   padding: 1.5rem 10%;
   justify-content: space-between;
-  position: relative;
-  position: sticky;
-  top: 0;
   opacity: 10;
+  transition: .5s;
 }
 nav.blur{
+  position: sticky;
+  top: 0;
   background-color: rgba(var(--background-dark),.1);
   backdrop-filter: blur(20px);
   border-bottom: 1.5px solid rgb(83, 79, 79, 0.4);
